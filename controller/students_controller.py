@@ -1,6 +1,7 @@
 from view import display
 from model import data_manager
 
+# kekw
 
 def get_all_students():
     students = data_manager.get_table_from_file("model/files/students.csv")
