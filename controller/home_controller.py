@@ -5,11 +5,11 @@ from controller import students_controller
 
 def choose():
     option = display.get_inputs(["Please enter a number: "], "")[0]
-    if option == '1':
+    if option == "1":
         students_controller.submenu()
-    elif option == '2':
+    elif option == "2":
         display.print_message("Not implemented yet.", True)
-    elif option == '0':
+    elif option == "0":
         display.print_message("Bueno, hasta la vista, companeros!")
         sys.exit(0)
     else:
@@ -17,13 +17,14 @@ def choose():
 
 
 def handle_menu():
-    display.print_message("Welcome to 'Universidad Técnica de Buenas Maneras y Pistoleros!'")
-    main_options = ["Exit program",
-                    "School Students",
-                    "Statistics"]
+    display.print_message(
+        "Welcome to 'Universidad Técnica de Buenas Maneras y Pistoleros!'"
+    )
+    main_options = ["Exit program", "School Students", "Statistics"]
     display.print_menu("Main Menu", main_options)
 
 
+# edited by ClawViper
 def menu():
     while True:
         handle_menu()
